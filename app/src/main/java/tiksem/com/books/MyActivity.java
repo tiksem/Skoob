@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.pollfish.constants.Position;
+import com.pollfish.main.PollFish;
+
 import tiksem.com.penis.R;
 
 public class MyActivity extends Activity {
@@ -16,6 +19,7 @@ public class MyActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
+        PollFish.init(this, "d068a840-3cd7-4ef6-a06d-25839a7b510a", Position.BOTTOM_LEFT, 5);
     }
 
     @Override
